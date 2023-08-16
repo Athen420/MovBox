@@ -1,77 +1,19 @@
-# Popular Movies, Stage 2
+# App Concept Overview:
+The main objective of this project is to create a user-friendly Android application that enables users to discover popular movies effortlessly. The app's design will focus on delivering a clean and compelling user interface, and it will showcase my skills in various aspects of Android app development.
 
-## Project Overview
-Most of us can relate to kicking back on the couch and enjoying
-a movie with friends and family. In this project, you’ll build an app
-to allow users to discover the most popular movies playing.
+## Key Features:
 
-This app uses the API from [themoviedb.org](https://www.themoviedb.org/)
+### Movie Data Integration: The app will utilize the themoviedb.org API to fetch real-time data about popular movies, including information such as titles, release dates, posters, ratings, and more.
 
-## API Key Note
-**Define key in build.gradle**
+### User Interface: I will design a user interface that's not only visually appealing but also intuitive to navigate. Users will be able to browse through a list of popular movies, view movie details, and explore related information.
 
-Find a file named `gradle.properties` in `.gradle` folder in your home directory.
+### Local Data Storage: To enhance the user experience and optimize performance, the app will implement local data storage using the Room library. This will allow the app to store relevant movie information locally, reducing the need for frequent API calls and providing seamless offline access to previously viewed movies.
 
-Add `PopularMoviesApp_ApiKey = "YOUR-API-KEY"` to that file.
+## Technologies and Libraries:
+In order to bring this app idea to life, I plan to incorporate the following technologies and libraries:
 
-Reference: [Hiding API keys from your Android repository](https://medium.com/code-better/hiding-api-keys-from-your-android-repository-b23f5598b906)
-
-## Why this Project
-
-To become an Android developer, you must know how to bring particular 
-mobile experiences to life. Specifically, you need to know how to build 
-clean and compelling user interfaces (UIs), fetch data from network services, 
-and optimize the experience for various mobile devices. You will hone these 
-fundamental skills in this project.
-
-By building this app, you will demonstrate your understanding of the 
-foundational elements of programming for Android. Your app will communicate with 
-the Internet and provide a responsive and delightful user experience.
-
-## What I learned
-- Fetch data from the Internet with theMovieDB API
-- Use adapters and custom list layouts to populate list views
-- Incorporate libraries to simplify the amount of code you need to write
-- Build a fully featured application that looks and feels natural on the latest Android operating system.
-
-
-## Image Resources
-[Icon](https://www.flaticon.com/free-icon/film_148716)
-made by [Smashicons](https://www.flaticon.com/authors/smashicons) from [www.flaticon.com](www.flaticon.com) is licensed by
-[CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
-
-## Libraries
-- [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/) 
-    * [Paging](https://developer.android.com/topic/libraries/architecture/paging/) 
-    * [Room](https://developer.android.com/topic/libraries/architecture/room)
-    * [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
-    * [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)
-- [Android Data Binding](https://developer.android.com/topic/libraries/data-binding/)
-- [Retrofit](http://square.github.io/retrofit/) for REST api communication
-- [Picasso](http://square.github.io/picasso/) for image loading
-
-## Video
-Here is the link to view a video demonstrating the app: https://youtu.be/1eFfdmHGKMw
-
-## Get it on Google Play
-**Popular Movies** app gives you information about movies from the TMDb. See what movies are the most popular and high rated. You can also discover Now Playing or Upcoming movies. Popular Movies app will help you decide what to watch.👍
-
-[![google-play-badge](https://user-images.githubusercontent.com/33213229/59287668-13be9a00-8cad-11e9-9a13-b62a4f562cfd.png)](https://play.google.com/store/apps/details?id=com.soojeongshin.popularmovies.free)
-[![ic_launcher](https://user-images.githubusercontent.com/33213229/59288297-72d0de80-8cae-11e9-9c58-25828f6e6ae6.png)](https://play.google.com/store/apps/details?id=com.soojeongshin.popularmovies.free)
-
- * Added search features so that you can search for movies by keyword
- * Integrated Firebase Analytics, Crashlytics, Firebase AdMob
- * Created a launcher icon using Adobe Photoshop
- 
-**Popular Movies uses the TMDb API but is not endorsed or certified by TMDb.**
- 
-I learned how to link my app to Google AdMob, design an app icon, how to reply on the feedback on improvements, and use the Google Play Console to manage my app. If you like my **Popular Movies** app, you can download it on Google Play.
-[Download Link](https://play.google.com/store/apps/details?id=com.soojeongshin.popularmovies.free).
-If you have any suggestions or issues, please write to me at pinkbee.dev@gmail.com. Thanks.
-
-## Screenshots
-![popular-movies-main](https://user-images.githubusercontent.com/33213229/49940286-757e9100-ff22-11e8-897a-45ba561df250.png)![popular-movies-detail](https://user-images.githubusercontent.com/33213229/49940281-71527380-ff22-11e8-935b-7e2d4138d979.png)![popular-movies-info](https://user-images.githubusercontent.com/33213229/49940285-73b4cd80-ff22-11e8-9ca1-b379e06b90bc.png)
-![popular-movies-trailers](https://user-images.githubusercontent.com/33213229/49940290-77485480-ff22-11e8-8ed5-e79430807c66.png)![popular-movies-cast](https://user-images.githubusercontent.com/33213229/49940272-6c8dbf80-ff22-11e8-9ea9-c873be4cd699.png)
-
-## License
-Apache, see the [LICENSE](LICENSE) file.
+### Android Architecture Components: Utilizing ViewModel and LiveData to manage UI-related data and ensure a lifecycle-conscious approach.
+### Paging: Implementing efficient data loading using the Paging library, which will enhance the app's performance when displaying large datasets.
+### Retrofit: Making network requests to the themoviedb.org API using Retrofit, which simplifies API communication and data parsing.
+### Room: Storing movie details locally in a SQLite database using Room, enabling offline access to movie information.
+### Android Data Binding: Binding UI components in layouts to data sources, enhancing the app's maintainability.
