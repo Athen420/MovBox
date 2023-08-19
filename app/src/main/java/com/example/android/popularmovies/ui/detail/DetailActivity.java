@@ -476,13 +476,12 @@ public class DetailActivity extends AppCompatActivity implements
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemId = item.getItemId();
-        switch (itemId) {
-            case R.id.action_share:
-                // Share movie information using share intent
-                startActivity(createShareIntent());
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        if (itemId == R.id.action_share) {
+            // Share movie information using share intent
+            startActivity(createShareIntent());
+            return true;
+        } else {
+            return super.onOptionsItemSelected(item);
         }
     }
 

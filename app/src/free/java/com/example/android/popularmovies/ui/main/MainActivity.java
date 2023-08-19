@@ -435,15 +435,12 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        switch (id) {
-            case R.id.action_settings:
-                // Launch SettingsActivity when the Settings option is clicked
-                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
-                startActivity(intent);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        int itemId = item.getItemId();
+        if (itemId == R.id.action_settings) {
+            // Handle the settings action here
+            return true;
+        } else {
+            return super.onOptionsItemSelected(item);
         }
     }
 
