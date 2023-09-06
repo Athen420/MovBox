@@ -25,3 +25,14 @@ Making network requests to the themoviedb.org API using Retrofit, which simplifi
 Storing movie details locally in a SQLite database using Room, enabling offline access to movie information.
 ### Android Data Binding: 
 Binding UI components in layouts to data sources, enhancing the app's maintainability.
+
+##App Showcase
+<img width="312" alt="Screenshot 2023-09-06 at 4 14 59 PM" src="https://github.com/Athen420/MovBox/assets/80808766/dbb206ac-2ecc-48f2-9b3b-3e018ec864b8">
+
+
+<img width="305" alt="Screenshot 2023-09-06 at 4 15 19 PM" src="https://github.com/Athen420/MovBox/assets/80808766/2fdaef50-e6c9-4711-83cc-3e8a231cd601">
+
+
+<img width="313" alt="Screenshot 2023-09-06 at 4 15 35 PM" src="https://github.com/Athen420/MovBox/assets/80808766/11690019-67ca-4b8e-a24a-f94e2d8aeb16">
+
+
